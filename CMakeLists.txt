@@ -15,10 +15,4 @@ file( GLOB SOURCES "include/*.cpp" )
 
 add_executable( metal_demo main.cpp ${SOURCES} )
 
-target_link_libraries(
-        metal_demo
-        PUBLIC
-        "-framework Metal"
-        "-framework MetalKit"
-        "-framework Foundation"
-)
+add_subdirectory   ( include )
